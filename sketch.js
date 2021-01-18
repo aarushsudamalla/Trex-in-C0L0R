@@ -40,7 +40,7 @@ function setup() {
   
   trex.addAnimation("running", trex_running);
   trex.addAnimation("collided", trex_collided);
-  trex.scale = 0.5;
+  trex.scale = 0.1;
   
   ground = createSprite(200,180,400,20);
   ground.addImage("ground",groundImage);
@@ -53,8 +53,8 @@ function setup() {
   restart = createSprite(300,140);
   restart.addImage(restartImg);
   
-  gameOver.scale = 0.5;
-  restart.scale = 0.5;
+  gameOver.scale = 0.1;
+  restart.scale = 0.1;
 
   gameOver.visible = false;
   restart.visible = false;
@@ -127,7 +127,7 @@ function spawnClouds() {
     var cloud = createSprite(600,120,40,10);
     cloud.y = Math.round(random(80,120));
     cloud.addImage(cloudImage);
-    cloud.scale = 0.5;
+    cloud.scale = 0.1;
     cloud.velocityX = -3;
     
      //assign lifetime to the variable
@@ -168,7 +168,7 @@ function spawnObstacles() {
     }
     
     //assign scale and lifetime to the obstacle           
-    obstacle.scale = 0.5;
+    obstacle.scale = 0.1;
     obstacle.lifetime = 300;
     //add each obstacle to the group
     obstaclesGroup.add(obstacle);
