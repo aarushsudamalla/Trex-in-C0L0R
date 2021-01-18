@@ -32,7 +32,7 @@ function preload(){
 }
 
 function setup() {
-  createCanvas(400,200);
+  createCanvas(600,300);
   
   trex = createSprite(50,height-70,20,50);
   
@@ -44,8 +44,7 @@ function setup() {
   ground.addImage("ground",groundImage);
   //ground.x = ground.width /2;
   ground.velocityX = -(6 + 3*score/100);
-  ground.scale = 0.08;
-  
+   
   gameOver = createSprite(width/2,height/2- 50);
   gameOver.addImage(gameOverImg);
   
