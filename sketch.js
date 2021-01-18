@@ -56,6 +56,8 @@ function setup() {
   gameOver.scale = 0.1;
   restart.scale = 0.1;
   ground.scale = 0.3;
+  obstacle3.scale = 0.8;
+  obstacle4.scale = 0.9;
 
   gameOver.visible = false;
   restart.visible = false;
