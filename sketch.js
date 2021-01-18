@@ -55,7 +55,7 @@ function setup() {
   
   gameOver.scale = 0.1;
   restart.scale = 0.1;
-  ground.scale = 0.8;
+  ground.scale = 1.0;
   obstacle1.scale = 0.5;
   obstacle2.scale = 0.5;
   obstacle3.scale = 0.8;
@@ -173,7 +173,6 @@ function spawnObstacles() {
     }
     
     //assign scale and lifetime to the obstacle           
-    obstacle.scale = 0.3;
     obstacle.lifetime = 300;
     //add each obstacle to the group
     obstaclesGroup.add(obstacle);
