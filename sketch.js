@@ -40,7 +40,7 @@ function setup() {
   
   trex.addAnimation("running", trex_running);
   trex.addAnimation("collided", trex_collided);
-  trex.scale = 0.1;
+  trex.scale = 0.05;
   
   ground = createSprite(200,180,400,20);
   ground.addImage("ground",groundImage);
@@ -53,13 +53,13 @@ function setup() {
   restart = createSprite(300,140);
   restart.addImage(restartImg);
   
-  gameOver.scale = 0.1;
-  restart.scale = 0.1;
-  ground.scale = 1.0;
+  gameOver.scale = 0.07;
+  restart.scale = 0.03;
+  ground.scale = 0.09;
   obstacle1.scale = 0.5;
-  obstacle2.scale = 0.5;
-  obstacle3.scale = 0.8;
-  obstacle4.scale = 0.9;
+  obstacle2.scale = 0.2;
+  obstacle3.scale = 0.06;
+  obstacle4.scale = 0.05;
 
   gameOver.visible = false;
   restart.visible = false;
