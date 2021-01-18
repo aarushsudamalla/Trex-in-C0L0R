@@ -6,7 +6,7 @@ var trex, trex_running, trex_collided;
 var ground, invisibleGround, groundImage;
 
 var cloudsGroup, cloudImage;
-var obstaclesGroup, obstacle1, obstacle2, obstacle3, obstacle4, obstacle5, obstacle6;
+var obstaclesGroup, obstacle1, obstacle2, obstacle3, obstacle4;
 
 var score=0;
 
@@ -26,9 +26,7 @@ function preload(){
   obstacle2 = loadImage("obstacle2_color.png");
   obstacle3 = loadImage("obstacle3_color.png");
   obstacle4 = loadImage("obstacle4_color.png");
-  obstacle5 = loadImage("obstacle5.png");
-  obstacle6 = loadImage("obstacle6.png");
-  
+   
   gameOverImg = loadImage("gameOver_color.png");
   restartImg = loadImage("restart_color.png");
 }
@@ -60,7 +58,7 @@ function setup() {
   restart.visible = false;
   
   invisibleGround = createSprite(width/2,height-10,width,125);
-  invisibleGround.visible = false;
+  //invisibleGround.visible = false;
   
   cloudsGroup = new Group();
   obstaclesGroup = new Group();
@@ -157,14 +155,6 @@ function spawnObstacles() {
       case 1: obstacle.addImage(obstacle1);
               break;
       case 2: obstacle.addImage(obstacle2);
-              break;
-      case 3: obstacle.addImage(obstacle3);
-              break;
-      case 4: obstacle.addImage(obstacle4);
-              break;
-      case 5: obstacle.addImage(obstacle5);
-              break;
-      case 6: obstacle.addImage(obstacle6);
               break;
       default: break;
     }
