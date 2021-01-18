@@ -42,7 +42,7 @@ function setup() {
   
   ground = createSprite(width/2,height,width,2);
   ground.addImage("ground",groundImage);
-  //ground.x = ground.width /2;
+  ground.x = width/2;
   ground.velocityX = -(6 + 3*score/100);
    
   gameOver = createSprite(width/2,height/2- 50);
@@ -58,6 +58,7 @@ function setup() {
   restart.visible = false;
   
   invisibleGround = createSprite(width/2,height-10,width,125);
+  invisibleGround.shapeColor = "#f4cbaa";
   //invisibleGround.visible = false;
   
   cloudsGroup = new Group();
